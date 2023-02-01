@@ -7,8 +7,12 @@ function carregar() {
     var nome = prompt('Ola! Como Posso te chamar?')
     if(nome == 'Rosalvo' || nome == 'rosalvo'){
         nome = 'Uva'
+    }if(nome == ''){
+        msg.innerHTML =`Agora são ${hora} horas e ${minuto} minutos`
+    } else {
+        msg.innerHTML =`${nome}, Agora são ${hora} horas e ${minuto} minutos`
     }
-    msg.innerHTML =`${nome}, Agora são ${hora} horas e ${minuto} minutos`
+    
     
   
     if (hora >= 0 && hora <= 12) {
