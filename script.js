@@ -5,7 +5,7 @@ function carregar() {
     var hora = data.getHours()
     var minuto = data.getMinutes()
     var nome = prompt('Ola! Como Posso te chamar?')
-    if(nome == 'Rosalvo'){
+    if(nome == 'Rosalvo' || nome == 'rosalvo'){
         nome = 'Uva'
     }
     msg.innerHTML =`${nome}, Agora são ${hora} horas e ${minuto} minutos`
