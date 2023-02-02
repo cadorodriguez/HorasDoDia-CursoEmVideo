@@ -6,8 +6,8 @@ function carregar() {
     var minuto = data.getMinutes()
     var nome = prompt('Ola! Como Posso te chamar?')
     if(nome == 'Rosalvo' || nome == 'rosalvo'){
-        nome = 'Uva'
-    }if(nome == ''){
+        nome = `\u{1F347} ${nome} \u{1F347}`
+    }if(nome == '' || nome == null){
         msg.innerHTML =`Agora são ${hora} horas e ${minuto} minutos`
     } else {
         msg.innerHTML =`${nome}, Agora são ${hora} horas e ${minuto} minutos`
